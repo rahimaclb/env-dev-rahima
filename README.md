@@ -31,4 +31,6 @@ Environnement de développement de Rahima COULIBALY – B1 DEV, IFRAN.
 | Node.js  | 26.xx    | dépôt NodeSource, puis `sudo apt install -y nodejs` | 
 | npm      | 11.xx    | installé avec Node.js                            |
      
-   
+   ## Historique 
+
+ Ce dossier est suivi avec Git depuis le sous-module 2. 
