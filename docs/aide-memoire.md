@@ -55,3 +55,7 @@
 | `git log --oneline --graph --all` | Affiche l’historique de toutes les branches | `git log --oneline --graph --all` |
 | `git push`      | Envoie les commits vers le dépôt distant          | `git push` |
 | `git branch -d` | Supprime une branche déjà fusionnée               | `git branch -d ma-branche` |
+
+## Astuce de Lisa
+ 
+`git log --oneline --graph` dessine l'historique avec les branches.
