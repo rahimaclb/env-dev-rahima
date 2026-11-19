@@ -57,6 +57,7 @@ Résultat attendu : une version pour Ubuntu, Git, Node.js, npm et tree.
 | ---------------------- | ------------------------------------------------------------ |
 | `README.md`            | Cette documentation                                          |
 | `JOURNAL.md`           | Le journal de mes choix                                      |
+|`docs/aide-memoire.md`  | Ma fiche de reseau                                           |                 
 | `docs/aide-memoire.md` | Mon aide-mémoire des commandes du terminal Linux             |
 | `scripts/installer.sh` | Script qui installe les outils (Git, Node.js, npm, tree…)    |
 | `scripts/verifier.sh`  | Script qui affiche les versions pour vérifier l'installation |
