@@ -42,7 +42,7 @@ Environnement de développement de Rahima COULIBALY – B1 DEV, IFRAN.
 
 ### 2. Installer les outils dans Ubuntu
 
-1. Ouvrir Ubuntu et aller dans le dossier du projet : `cd ~/dev/env-dev-kone`
+1. Ouvrir Ubuntu et aller dans le dossier du projet : `cd ~/dev/env-dev-rahima`
 2. Lancer le script d'installation : `./scripts/installer.sh`
 
 ## Vérification
