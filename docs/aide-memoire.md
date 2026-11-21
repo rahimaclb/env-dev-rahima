@@ -77,12 +77,16 @@
 
 ## Branches Git
 
-| Commande                          | Ce qu’elle fait                                   | Exemple                    |
-| --------------------------------- | ------------------------------------------------- | -------------------------- |
-| `git branch`                      | Affiche les branches et indique la branche active | `git branch`               |
-| `git switch`                      | Change de branche                                 | `git switch main`          |
-| `git switch -c`                   | Crée une branche et bascule dessus                | `git switch -c ma-branche` |
-| `git merge`                       | Fusionne une branche dans la branche active       | `git merge ma-branche`     |
-| `git log --oneline --graph --all` | Affiche l’historique de toutes les branches       | `git log --oneline --graph --all` |
-| `git push`                        | Envoie les commits vers le dépôt distant          | `git push`                 |
-| `git branch -d`                   | Supprime une branche déjà fusionnée               | `git branch -d ma-branche` |
+| Commande        | Ce qu’elle fait                                   | Exemple                    |
+| --------------- | ------------------------------------------------- | -------------------------- |
+| `git branch`    | Affiche les branches et indique la branche active | `git branch`               |
+| `git switch`    | Change de branche                                 | `git switch main`          |
+| `git switch -c` | Crée une branche et bascule dessus                | `git switch -c ma-branche` |
+| `git merge`     | Fusionne une branche dans la branche active       | `git merge ma-branche`     |
+| `git log --oneline --graph --all` | Affiche l’historique de toutes les branches | `git log --oneline --graph --all` |
+| `git push`      | Envoie les commits vers le dépôt distant          | `git push`                 |
+| `git branch -d` | Supprime une branche déjà fusionnée               | `git branch -d ma-branche` |
+
+## Astuce de Lisa
+ 
+`git log --oneline --graph` dessine l'historique avec les branches.
