@@ -34,22 +34,30 @@ Environnement de développement de Rahima COULIBALY – B1 DEV, IFRAN.
 
 ## Installation
 
-### 1. Installer Ubuntu et VS Code
+### 1. Installer Ubuntu sous WSL sur Windows 11 et VS Code
 
-- **Windows :** dans le Terminal (administrateur), taper `wsl --install`, redémarrer, puis choisir un nom d'utilisateur et un mot de passe Ubuntu.
-- **Mac :** installer Homebrew depuis [brew.sh](https://brew.sh), puis taper `brew install colima docker`, `colima start` et `colima ssh`.
+- Dans le Terminal Windows ouvert en tant qu’administrateur, taper `wsl --install`, puis redémarrer l’ordinateur.
+- Au premier lancement d’Ubuntu, choisir un nom d’utilisateur et un mot de passe.
+- Installer VS Code depuis [code.visualstudio.com](https://code.visualstudio.com).
+
+### Sur Mac
+
+- Installer Homebrew depuis [brew.sh](https://brew.sh).
+- Dans le Terminal, taper `brew install colima docker`.
+- Démarrer Colima avec `colima start`, puis se connecter avec `colima ssh`.
 - Installer VS Code depuis [code.visualstudio.com](https://code.visualstudio.com).
 
 ### 2. Installer les outils dans Ubuntu
 
-1. Ouvrir Ubuntu et aller dans le dossier du projet : `cd ~/dev/env-dev-kone`
-2. Lancer le script d'installation : `./scripts/installer.sh`
+1. Ouvrir Ubuntu et aller dans le dossier du projet : `cd ~/dev/env-dev-rahima`
+2. Lancer le script d’installation : `./scripts/installer.sh`
 
 ## Vérification
 
 Lancer `./scripts/verifier.sh` dans Ubuntu.
 
-Résultat attendu : une version pour Ubuntu, Git, Node.js, npm et tree.
+Résultat attendu : une version pour Ubuntu, Git, Node.js, npm et `tree`.
+
 
 ## Contenu du dossier
 
@@ -57,6 +65,7 @@ Résultat attendu : une version pour Ubuntu, Git, Node.js, npm et tree.
 | ---------------------- | ------------------------------------------------------------ |
 | `README.md`            | Cette documentation                                          |
 | `JOURNAL.md`           | Le journal de mes choix                                      |
+|`docs/aide-reseau.md`   | Ma fiche de reseau                                           |                 
 | `docs/aide-memoire.md` | Mon aide-mémoire des commandes du terminal Linux             |
 | `scripts/installer.sh` | Script qui installe les outils (Git, Node.js, npm, tree…)    |
 | `scripts/verifier.sh`  | Script qui affiche les versions pour vérifier l'installation |
