@@ -1,37 +1,37 @@
 # Journal des choix
 
-## 2026-11-11 -installation de tree
- 
- - **Décision :** installer Node.js avec le gestionnaire de paquets `apt` en mode adminstrateur avec `sudo` .
- - **Autres possibilités :** le paquet nodejs d'Ubuntu, le site nodejs.org.
- - **Raison :** NodeSource donne la version LTS récente, et les commandes peuvent être écrites dans mon README pour être refaites à l'identique. 
+## 2026-11-03 – Système pour le terminal
 
- ## 2026-11-03 – Système pour le terminal 
+- **Décision :** utiliser Ubuntu 26.04.1 dans WSL sur mon PC Windows 11.
+- **Autres possibilités :** installer une machine virtuelle avec VirtualBox, installer Ubuntu en double démarrage ou utiliser Git Bash.
+- **Raison :** WSL permet d’utiliser un terminal Ubuntu directement depuis Windows, sans démarrer une machine virtuelle séparément. Ce terminal est adapté au travail sur des projets et fonctionne avec VS Code.
 
- - **Décision :** utiliser Ubuntu 24.04 dans WSL sur mon PC Windows.
- - **Autres possibilités :** installer une machine irtuelle avec VirtualBox, faire un dual-boot Ubuntu, ou utiliser Git Bash 
- - **Raison :** WSL s'ouvre directement sans ralentire l'ordinateur, donne un  vrai terminal Ubuntu Identique à celui d'un serveur et fonctionne directemet avec VS code avec VS Code.
+## 2026-11-05 – Éditeur de code
 
- ## 2026-11-05 – Éditeur de code
+- **Décision :** utiliser VS Code avec l’extension WSL.
+- **Autres possibilités :** utiliser Notepad++, Sublime Text ou éditer les fichiers uniquement dans le terminal avec nano.
+- **Raison :** VS Code permet d’ouvrir le dossier du projet depuis Ubuntu avec la commande `code .`. Il comprend un terminal intégré et permet de prévisualiser les fichiers Markdown avec `Ctrl` + `Maj` + `V`.
 
-- **Décision :** utiliser VS Code avec l'extension WSL.
-- **Autres possibilités :** Notepad++, Sublime Text, ou éditer seulement dans le terminal avec nano.
-- **Raison :** VS Code permet d'ouvrir le dossier du projet depuis Ubuntu avec la commande `code .`, d'avoir le terminal intégré en bas et de voir le rendu Markdown avec Ctrl + Maj + V.
+## 2026-11-11 – Installation de tree
+
+- **Décision :** installer `tree` dans Ubuntu avec la commande `sudo apt install -y tree`.
+- **Autres possibilités :** utiliser la commande `ls` pour afficher le contenu des dossiers ou parcourir les dossiers un par un.
+- **Raison :** `tree` affiche les dossiers et les fichiers sous forme d’arborescence. Cela permet de voir plus facilement l’organisation du projet dans le terminal.
 
 ## 2026-11-12 – Version de Node.js : LTS
 
-- **Décision :** installer la version LTS (v22.x) de Node.js avec un numéro majeur pair.
-- **Autres possibilités :** installer la dernière version impaire (Current, comme la v23).
-- **Raison :** les versions LTS sont stables et maintenues pendant 3 ans. Cela évite que les programmes plantent avec des erreurs d'incompatibilité quand on partage son projet avec un camarade.
+- **Décision :** utiliser Node.js 26.x, la version indiquée dans mon README.
+- **Autres possibilités :** utiliser une autre version de Node.js proposée par Ubuntu ou une version Current.
+- **Raison :** je veux utiliser une version adaptée à mon environnement et garder une version cohérente entre mon installation et la vérification des logiciels.
 
 ## 2026-11-17 – Installation de Node.js
 
-- **Décision :** installer Node.js avec le dépôt NodeSource et apt.
-- **Autres possibilités :** le paquet nodejs d'Ubuntu, le site nodejs.org.
-- **Raison :** NodeSource donne la version LTS récente, et les commandes peuvent être écrites dans mon README pour être refaites à l'identique.
+- **Décision :** installer Node.js avec le dépôt NodeSource et `apt`.
+- **Autres possibilités :** installer le paquet `nodejs` d’Ubuntu ou télécharger Node.js depuis [nodejs.org](https://nodejs.org).
+- **Raison :** cette méthode permet d’installer Node.js avec les outils de gestion de paquets utilisés dans Ubuntu. Les commandes d’installation peuvent être indiquées dans le README pour être retrouvées et réutilisées.
 
-## 2026-11-19 – Scripts d'installation et de vérification
+## 2026-11-19 – Scripts d’installation et de vérification
 
-- **Décision :** écrire deux scripts Bash `scripts/installer.sh` et `scripts/verifier.sh`.
-- **Autres possibilités :** retaper toutes les commandes à la main à chaque fois ou les copier-coller une par une depuis le README.
-- **Raison :** avec un script, on ne fait pas de faute de frappe, on installe tout en une seule commande et mon binôme peut vérifier tout de suite si son poste est prêt.
+- **Décision :** écrire deux scripts Bash, `scripts/installer.sh` et `scripts/verifier.sh`.
+- **Autres possibilités :** retaper les commandes à la main ou les copier-coller une par une depuis le README.
+- **Raison :** les scripts regroupent les commandes d’installation et de vérification. Ils réduisent les risques de faute de frappe et permettent à mon binôme de vérifier rapidement si son poste est prêt.
